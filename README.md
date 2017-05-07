@@ -2,19 +2,19 @@
 
 Simple Spring boot "microservice" application.
 
-# Build Application 
+## Build Application 
 mvn clean install
 
-# Run in Development mode
+## Run in Development mode
 java -jar FeedbackService-0.0.1.jar -Dspring.profiles.active=dev
 
-# Run in Production mode 
+## Run in Production mode 
 java -jar FeedbackService-0.0.1.jar -Dspring.profiles.active=prod
 
-# Available REST API
+## Available REST API
 
 http://localhost:8080/feedback
 
-# REST API Documentation
+## REST API Documentation
 
 http://localhost:8080/docs/index.html
