@@ -15,6 +15,26 @@ java -jar FeedbackService-0.0.1.jar -Dspring.profiles.active=prod
 
 http://localhost:8080/feedback
 
-## REST API Documentation
+* GET /feedback -> all feedbacks
+* GET /feedback?user=UserName -> all feedback for user with name "UserName"
 
-http://localhost:8080/docs/index.html
+* POST /feedback -> add new feedback
+ 
+  * request JSON body 
+  ```json
+  { 
+    "user" : "testUser", 
+    "message" : "New Message" 
+  }
+  ```
+
+* Response example
+
+```json
+{ 
+  "id" : 1,
+  "user" : "testUser", 
+  "message" : "New Message",
+  "createDate": "2017-05-08T11:41:20.502+02:00[Europe/Bratislava]"
+}
+```
